@@ -72,6 +72,23 @@ input, select, textarea {
 	appearance: none;
 }
 
+div#radio-btns {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+	margin: 10px;
+	cursor: pointer;
+}
+
+select.form-select {
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
 /* Basic */
 
 	html {

@@ -183,3 +183,19 @@
 			});
 
 })(jQuery);
+
+
+
+
+
+
+function sendFeedback(){
+const category = [...document.getElementsByTagName('select')][0].selectedOptions[0].value;
+const subject = document.getElementById('subject').value;
+const message = document.getElementById('message').value;
+if(subject.length == 0 || message.length ==0){
+	return;
+} else {
+	aptrinsic('send', 'feedback', {'category' : category, 'subject' : subject, 'description' : message});
+	alert("Thank you for Sending your Feedback to PX");
+}}

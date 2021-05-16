@@ -10,7 +10,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+		<!-- Gainsight PX Tag-->
+		<script type="text/javascript">
+			(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+				(n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+			  var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+			  var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+			})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-DT38BLOGLNV8-1");
+		  </script>
+		  <!-- Gainsight PX Tag-->
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -21,8 +29,42 @@
 
 						<!-- Logo -->
 							<h1 id="logo"><a href="index.html">Visitor Page</a></h1>
-							<p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
+							<p>Enter your Email address below to generate a Lead.</p>
 
+										<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<!-- <h2>Questions or comments? <strong>Get in touch:</strong></h2> -->
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<form id="form">
+																  
+										<label for="lead">Enter your email address</label>
+										<input type="email" id="px-lead" required>
+									  
+										<button style="cursor: pointer;"type="submit">Submit</button>
+									  </form>
+									<!-- <form method="post" action="#">
+										<div class="row gtr-50">
+									
+											<div class="col-6 col-12-small">
+												<input name="email" placeholder="Email" type="email" />										
+											</div>
+											<div class="col-6 col-12-small">
+												<input class="button icon solid" name="submit" type="button" value="Submit"/>									
+											</div>
+										</div>
+									</form>   -->
+								</section>
+							</div>
+
+						</div>
+					</div>
+		
+				</section>
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
@@ -52,70 +94,7 @@
 					</div>
 				</section>
 
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>Okay, so what is this?</h3>
-										</header>
-										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Nice! What is HTML5 UP?</h3>
-										</header>
-										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
-										I started it as a way to both test my responsive tools and sharpen up my coding
-										and design skills a bit.</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>What's this built with?</h3>
-										</header>
-										<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
-										sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
-									</section>
-
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Banner -->
-				<section id="banner">
-					<div class="container">
-						<p>Use this space for <strong>profound thoughts</strong>.<br />
-						Or an enormous ad. Whatever.</p>
-					</div>
-				</section>
 
 			<!-- Main -->
 				<section id="main">
@@ -143,7 +122,7 @@
 											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
 											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
 											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+												<li data-px-btn="continue reading"><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
 											</ul>
 										</article>
 
@@ -175,7 +154,7 @@
 											tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
 											magna tempus.</p>
 											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+												<li data-px-btn="continue reading"><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
 											</ul>
 										</article>
 
@@ -245,7 +224,7 @@
 															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
 															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
 															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+																<li data-px-btn="learn More"><a href="#" class="button icon solid fa-file">Learn More</a></li>
 															</ul>
 														</article>
 
@@ -263,7 +242,7 @@
 															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
 															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
 															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+																<li data-px-btn="learn More"><a href="#" class="button icon solid fa-file">Learn More</a></li>
 															</ul>
 														</article>
 
@@ -276,86 +255,84 @@
 						</div>
 					</div>
 				</section>
+			<!-- Features -->
+			<section id="features">
+				<div class="container">
+					<header>
+						<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
 
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<header>
-							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
+							<!-- Feature -->
 								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
+									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<header>
+										<h3>Okay, so what is this?</h3>
+									</header>
+									<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
+									by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
+									<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
 								</section>
-							</div>
-							<div class="col-6 col-12-medium">
+
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+
+							<!-- Feature -->
 								<section>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-									leo nibh, rutrum eu malesuada.</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													1234 Somewhere Road<br />
-													Nashville, TN 00000<br />
-													USA
-												</li>
-												<li class="icon solid fa-phone">
-													(000) 000-0000
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">info@untitled.tld</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@untitled</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">instagram.com/untitled</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/untitled</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">facebook.com/untitled</a>
-												</li>
-											</ul>
-										</div>
-									</div>
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<header>
+										<h3>Nice! What is HTML5 UP?</h3>
+									</header>
+									<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
+									I started it as a way to both test my responsive tools and sharpen up my coding
+									and design skills a bit.</p>
 								</section>
-							</div>
+
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+
+							<!-- Feature -->
+								<section>
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<header>
+										<h3>What's this built with?</h3>
+									</header>
+									<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
+									sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
+								</section>
+
+						</div>
+						<div class="col-12">
+							<ul class="actions">
+								<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+							</ul>
 						</div>
 					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+				</div>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="container">
+					<p>Use this space for <strong>profound thoughts</strong>.<br />
+					Or an enormous ad. Whatever.</p>
+				</div>
+			</section>
+
 
 		</div>
 
 		<!-- Scripts -->
+		<script>
+			const form = document.getElementById('form');
+			form.onsubmit = submit;
+			function submit(event) {
+				console.log('Form Submitted')
+						// For this example, don't actually submit the form
+				event.preventDefault();
+				}
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
