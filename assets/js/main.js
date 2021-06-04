@@ -105,7 +105,7 @@ function generateRandomUser(){
 	const country = results.location.country;
 	const postalCode = results.location.postcode;
 	const gender = results.gender;
-	const Language = languages[Math.floor(Math.random()*languages.length)];
+	const language = languages[Math.floor(Math.random()*languages.length)];
 	const phone = results.cell;
 	const latitude = results.location.coordinates.latitude;
 	const longitude = results.location.coordinates.longitude;
@@ -128,7 +128,7 @@ function generateRandomUser(){
 		"longitude":longitude,
 		"gender":gender,
 		"phone":phone,
-		"Language":Language
+		"Language":language
 	},{
 		"id": "PX-ID-"+accountName.name, //Required	
 		"name": accountName.name,
