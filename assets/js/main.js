@@ -4,7 +4,7 @@
 //e7781811-93e6-43bf-bd98-8bc8f4f6d867
 
 const departments = ["Finance","Marketing","Sales","Engineering","Customer Service","Human Resources"];
-const languages = ["English","Spanish","German","Arabic","French"];
+const languages = ["en-US","es-ES","de-DE","fr-FR"];
 const accounts = [
 	{
 	name:"Amazon",
