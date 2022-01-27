@@ -1,7 +1,7 @@
 
 
 
-function kcbshow() {
+function kcbShow() {
     aptrinsic('kcb', 'show', {
         onDone: console.log,
         onError: console.error
