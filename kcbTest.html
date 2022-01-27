@@ -3,14 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/kcbTest.css">
+    <link rel="stylesheet" href="./assets/css/KCBTest/kcbTest.css">
     <title>KCB Testing Page</title>
 </head>
 <body>
 
+    <div class="wrapper-fullPage" >
+
+<h1>Usng API calls to Show/Open/Hide/Close a Knowledge Center Bot</h1>
+    <div class="kcb-btn-wrapper" >
+        <button id="kcbShow" class="buttonKcb button2" onclick="kcbShow()">Show</button>
+        <button id="kcbOpen" class="buttonKcb button3" onclick="kcbOpen()">Open</button>
+        <button id="kcbHide" class="buttonKcb button4" onclick="kcbHide()">Hide</button>
+        <button id="kcbClose" class="buttonKcb button5" onclick="kcbClose()">Close</button>
+    </div>
+
+
+    <br>
 
     <!--Pop Up KCB - To write to support immediately when a support article failed to address their concerns-->
-<div class="wrapper-fullPage">
+
     <div class="container1">
         <h1>A Support Article on your Knowledge Base</h1>
             <img src="./images/supportAnswer1.png" alt="supportanswer" style="border: 2px solid red;">
@@ -21,6 +33,7 @@
     </div>
 </div>
 
+<script src="./assets/js/KCB/kcb.js"></script>
 
 </body>
 </html>
