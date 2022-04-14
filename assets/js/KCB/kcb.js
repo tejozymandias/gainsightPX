@@ -2,6 +2,7 @@
 document.getElementById('kcbShow').addEventListener("click", myFunction);
 function myFunction() {
 window.aptrinsic('reset');
+ console.log('session reset done');   
 }
 
 function kcbShow() {
