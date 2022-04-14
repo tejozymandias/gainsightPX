@@ -1,5 +1,8 @@
 
-
+document.getElementById('kcbShow').addEventListener("click", myFunction);
+function myFunction() {
+window.aptrinsic('reset');
+}
 
 function kcbShow() {
     aptrinsic('kcb', 'show', {
@@ -28,3 +31,6 @@ function kcbClose() {
         onError: console.error
       });
 }
+
+
+
