@@ -1,8 +1,10 @@
 
-document.getElementById('kcbShow').addEventListener("click", myFunction);
-function myFunction() {
-window.aptrinsic('reset');
- console.log('session reset done');   
+const currentDomain = document.domain;
+document.getElementById('ratingBtn').addEventListener("click", resetSession);
+
+function resetSession() {
+document.cookie = 'apt.sid="";expires=Thu, 01 Jan 1970 00:00:00 UTC;domain='+currentDomain+'; path=/';
+ console.log('reset apt.sid ccokie');   
 }
 
 function kcbShow() {
