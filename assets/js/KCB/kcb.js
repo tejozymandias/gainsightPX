@@ -1,11 +1,11 @@
 
 const currentDomain = document.domain;
-document.getElementById('ratingBtn').addEventListener("click", resetSession);
-
-function resetSession() {
-document.cookie = 'apt.sid="";expires=Thu, 01 Jan 1970 00:00:00 UTC;domain='+currentDomain+'; path=/';
- console.log('reset apt.sid ccokie');   
-}
+document.getElementById('ratingBtn').addEventListener("click", function() {
+  setTimeout(()=>{
+    document.cookie = 'apt.sid="";expires=Thu, 01 Jan 1970 00:00:00 UTC;domain='+currentDomain+'; path=/';
+	console.log('reset apt.sid ccokie');   
+  },2000);
+});
 
 function kcbShow() {
     aptrinsic('kcb', 'show', {
