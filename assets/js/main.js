@@ -218,15 +218,15 @@ function logOut(){
 (function (){
 	document.addEventListener('DOMContentLoaded',()=>{
 		if(location.href.indexOf('engagement')>-1){
-			aptrinsic('set', 'globalContext', {"version":555, "name":"Engagement"});
+			aptrinsic('set', 'globalContext', {"name":"Product 1"});
 		} else if (location.href.indexOf('product-mapper')>-1) {
-			aptrinsic('set', 'globalContext', {"version":556, "name":"Product Mapper"});
+			aptrinsic('set', 'globalContext', {"name":"Product 2"});
 		} else if (location.href.indexOf('analytics')>-1) {
-			aptrinsic('set', 'globalContext', {"version":557, "name":"Analytics"});
+			aptrinsic('set', 'globalContext', {"name":"Product 3"});
 		} else if (location.href.indexOf('dashboard')>-1) {
-			aptrinsic('set', 'globalContext', {"version":558, "name":"Dashboard"});
+			aptrinsic('set', 'globalContext', {"name":"Product 4"});
 		} else if ((location.href.indexOf('sdk')>-1) || (location.href.indexOf('attributes')>-1)) {
-			aptrinsic('set', 'globalContext', {"version":559, "name":"General Settings"});
+			aptrinsic('set', 'globalContext', {"name":"General Settings"});
 		} 		
 	  });	
   })();
